@@ -1,0 +1,112 @@
+/* CSS Stylesheet for Blog Preview Card Challenge by FrontEnd Mentor */
+
+/* figtree-light-italic */
+@font-face {
+	font-family: Figtree;
+	font-style: italic;
+	font-weight: 500 800;
+	font-stretch: 100%;
+	src: local("Figtree Light Italic"), local("Figtree-LightItalic"), url(../assets/fonts/figtree-light-italic.woff2) format("woff2"), url(../assets/fonts/figtree-light-italic.woff) format("woff");
+	font-display: auto;
+}
+/* figtree-light */
+@font-face {
+	font-family: Figtree;
+	font-style: normal;
+	font-weight: 500 800;
+	font-stretch: 100%;
+	src: local("Figtree Light"), local("Figtree-Light"), url(../assets/fonts/figtree-light.woff2) format("woff2"), url(../assets/fonts/figtree-light.woff) format("woff");
+	font-display: auto;
+}
+
+*, *::before, *::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 90%);
+    --font-family: "Figtree",sans-serif;
+    --base-font-size: 16px;
+}
+
+html{
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    line-height: 1.5em;
+}
+
+.wrapper{
+    width: 80%;
+    min-width: 375px;
+    max-width: 450px;
+    margin-inline: auto;
+    background-color: var(--white);
+    border-radius: 30px;
+    border: 1px hsl(0, 0%, 0%) solid;
+    margin-block-start: 10vh;
+}
+
+h1{
+    line-height: 1.2em;
+    margin-block: 1rem;
+}
+
+h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card-content{
+    margin-inline: 2rem;
+}
+
+
+.hero-image-wrapper{
+    width: 90%;
+    /* border: red 2px solid; */
+    margin-inline: auto;
+    margin-block: 1.5rem;
+    
+}
+
+.hero-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+.highlight-text{
+    background-color: var(--yellow);
+    padding: 0.5em 1em;
+    max-width: fit-content;
+    border-radius: 5px;
+    margin-block-end: 1em;
+}
+
+.course-description{
+    color: var(--gray-500);
+    width: 90%;
+}
+
+.user-details{
+    display: flex;
+    margin-block: 1em;
+    gap: 2em;
+    align-items: center;
+}
+
+.user-details > p{
+    font-weight: 900;
+}
+
+.user-details > img{
+    border-radius: 50%;
+}
